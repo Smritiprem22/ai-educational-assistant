@@ -15,3 +15,36 @@ AI Educational Assistant is a prototype built using Python, Streamlit, LangChain
 It brings together PDF-based content generation, interactive practice, AI-assisted feedback, visual learning, and lesson planning within a single application.
 
 The goal is to simplify study preparation and make educational content more accessible and engaging.
+
+
+## 🏗️ System Architecture
+
+The AI Educational Assistant uses Streamlit for its user interface, LangChain for coordinating AI interactions, and Google Gemini for generating educational content.
+
+```mermaid
+flowchart TD
+    A["Student / Educator"] --> B["Streamlit Frontend"]
+    B --> C["PDF Upload & Text Extraction"]
+    B --> D["Quiz Answers & Lesson Inputs"]
+    C --> E["LangChain Prompt Chains"]
+    D --> E
+    E <--> F["Google Gemini LLM"]
+    E --> G["Personalized Notes & Quiz Questions"]
+    E --> H["Flashcards, Feedback & Lesson Plans"]
+    E --> I["PlantUML Code"]
+    I --> J["PlantUML Renderer"]
+    G --> K["Streamlit Results & Session State"]
+    H --> K
+    J --> K
+    K --> L["Performance Dashboard"]
+```
+
+### How It Works
+
+1. **User Interaction:** Students upload learning materials, answer questions, or enter lesson-planning requirements through the Streamlit interface.
+2. **Document Processing:** pdfplumber extracts text from uploaded PDF documents.
+3. **AI Processing:** LangChain constructs prompts and communicates with Google Gemini.
+4. **Content Generation:** Gemini generates personalized notes, questions, flashcards, answer feedback, and lesson plans.
+5. **Visual Learning:** PlantUML converts AI-generated diagram definitions into visual diagrams.
+6. **Performance Tracking:** Streamlit stores assessment results during the session, while Matplotlib visualizes student performance.
+
