@@ -1,4 +1,5 @@
-📚 AI Educational Assistant
+#AI Educational Assistant
+
 An AI-powered learning and teaching assistant that transforms educational content into personalized study materials, interactive assessments, and visual explanations.
 The Problem
 Students often struggle to convert lengthy academic materials into structured, engaging study resources. Traditional learning methods require manually preparing notes, creating practice questions, and identifying knowledge gaps.
